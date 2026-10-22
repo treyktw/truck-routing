@@ -1,0 +1,29 @@
+{
+  "name": "truck-routing",
+  "version": "0.1.0",
+  "description": "Truck-aware routing domain logic in TypeScript: request normalization, stable cache keys, HERE notice classification, crowdsourced hazard scoring, candidate ranking, and HERE-vs-Google corridor reconciliation.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "tsx examples/rank-candidates.ts"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  }
+}
